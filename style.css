@@ -1,8 +1,10 @@
 /* *{border: blue 1px solid;
+  overflow-x: hidden;
 }  */
+
  .tab {
     float: left;
-    background-color: rgb(253, 255, 119);
+    background-color: rgb(253, 251, 110);
     width: 10px;
     height: 60px;
   }
@@ -15,28 +17,28 @@
   font-size: 17px;
 }
 .tab button:hover {
-  background-color: white;
+  background-color: rgb(253, 251, 110);
 }
 .tab button.active {
-  background-color: white;
+  background-color: rgb(253, 251, 110);
 }
 
 
 body {
     display: block;
-    background-color: rgb(253, 255, 119);
-    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-family: "ABeeZee", Arial, Helvetica, sans-serif;
     align-items: center;
   }
 
-  #myPhoto {
+  #myPhoto {  
     align-self: center;
-    background-color: rgb(145, 145, 219);
-    padding: 30px;
+    background-color: rgb(233, 221, 51);
+    padding: 40px;
   }
 
   h5 {
-    color: rgb(211, 81, 30);
+    color: orangered;
     font-size: 50px;
     animation-name: sustainable;
     animation-duration: 5s;
@@ -51,7 +53,7 @@ body {
   }
 
   h7 {
-    color: rgb(211, 81, 30);
+    color: orangered;
     font-size: 50px;
     animation-name: future;
     animation-duration: 5s;
@@ -64,7 +66,7 @@ body {
   }
 
   h1 {
-    color: rgb(93, 61, 129);
+    color: rgb(120, 86, 160);
     position: relative;
     font-size: 200px;
     animation-name: desi;
@@ -75,44 +77,75 @@ body {
   }
   @keyframes desi {
     0%   {left:0px;}
-    100%  {left:250px;}
+    100%  {left:330px;}
   }
 
   h2 {
-    color: rgb(182, 118, 59);
+    color: rgb(120, 86, 160);
     text-align: center;
-    border: 1px solid rgb(102, 102, 199);; 
+    border: 1px solid rgb(233, 221, 51); 
     margin: 10px;
     font-size: 30px;
   }
+
   h3 {
-    color: rgb(81, 101, 156);
-    text-align: center;
-    border: 1px solid rgb(102, 102, 199);; 
-    margin: 10px;
-    font-size: 30px;
+    color: rgb(120, 86, 160);
+    position: relative;
+    font-size: 200px;
+    animation-name: CV;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    margin:0;
+    padding:0;
   }
+  @keyframes CV {
+    0%   {left:270px;}
+    100%  {left:0px;}
+  }
+
+
   h4 {
-    text-align: center;
+    text-align: left;
     font-size: 32px;
     font-weight: bold;
-    color: rgb(23, 40, 87);
+    color: rgb(120, 86, 160);
+    margin:10px;
   }
 
   .ed {
-    display: flex;
-    position: relative;
-    width: 500px;
-    height: 20px;  
-    border: 1px solid blueviolet;
+    text-align: center;
+    position: center;
+    float: center;
+    font-size: 1.5em;
+    width: 200px;
+    height: 40px;  
+    border: 1px solid rgb(233, 221, 51);
     box-sizing: border-box;
-    animation: foto;
+    color: rgb(120, 86, 160);
+    /* animation: foto;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    
+     */
   }
+
+  .contacts {
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    z-index: 10;
+  }
+
+  .jotform-form {
+  color: black;
+  font-size: 16px;
+  font-family: "ABeeZee", Arial, Helvetica, sans-serif;
+  background-color: orangered;
+}
   
-  @keyframes foto {
+  /* @keyframes foto {
     0%   {
       left: 5000px;
   
@@ -121,26 +154,48 @@ body {
     100% {
       left: 20px;
     }
-  }
+  } */
 
   h6 {
     text-align: left;
     font-size: 24px;
-    color: rgb(93, 61, 129);
+    color: rgb(120, 86, 160);
     font-weight: bold;
   }
 
+  h8 {
+    color: orangered;
+    font-size: 50px;
+    animation-name: future;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    position: relative;
+  }
+  @keyframes future {
+    0%   {left:1200px;}
+    100%  {left:638px;}
+  }
 
   p {
     text-align: left;
     font-size: 20px;
     font-weight: normal;
-    color: rgb(93, 61, 129);
+    margin:10px;
   }
 
   img {
       float: inherit;
   }
+
+  footer {
+    margin: 10px;
+    width: 98vw;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-family: "ABeeZee", Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
   
   a:hover {
     color:blue;
@@ -153,7 +208,25 @@ body {
     color:orangered;
   }
 
-  @media (max-width:900px) { 
+  @media (max-width:300px) { 
     #myPhoto { width:60% ;
     }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(233, 221, 51);
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    padding: 20px;
+    background-color: rgb(233, 221, 51);
   }
